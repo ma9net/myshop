@@ -42,19 +42,27 @@
     pip install -r requirements.txt
     ```
 
-4. Run database migrations:
+4. open settings.py nad change these lines:
+    ```
+    EMAIL_HOST_USER = 'your@mail.com'
+    EMAIL_HOST_PASSWORD = 'pass'
+    ```
+with your email and password for this specific app.
+
+   
+5. Run database migrations:
 
     ```
     python manage.py migrate
     ```
 
-5. Start the development server:
+6. Start the development server:
 
     ```
     python manage.py runserver
     ```
 
-6. Open your browser and visit `http://localhost:8000` to access the online shop.
+7. Open your browser and visit `http://localhost:8000` to access the online shop.
 
 
 
